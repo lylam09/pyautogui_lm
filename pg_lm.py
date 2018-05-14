@@ -1,8 +1,11 @@
 import pyautogui as pg
 import time 
 
+pg.hotkey('winleft', 'ctrl', 'd')
+pg.hotkey('winleft')
+pg.typewrite('idle\n', .5)
 pg.hotkey('ctrl', 'n')
-time.sleep(3) 
+
 pg.typewrite('Hello.\n', .5)
 
 pg.hotkey('ctrl', 'shift', 's')
